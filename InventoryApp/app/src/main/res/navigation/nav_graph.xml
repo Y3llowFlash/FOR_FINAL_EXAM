@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/itemInsertFragment">
+
+    <fragment
+        android:id="@+id/itemInsertFragment"
+        android:name="com.example.inventoryapp.ui.fragment.ItemInsertFragment"
+        android:label="New Item" />
+
+    <fragment
+        android:id="@+id/itemDeleteFragment"
+        android:name="com.example.inventoryapp.ui.fragment.ItemDeleteFragment"
+        android:label="Delete Item" />
+
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.example.inventoryapp.ui.fragment.ItemListFragment"
+        android:label="Show Items" />
+
+</navigation>

@@ -11,17 +11,27 @@ import kotlinx.coroutines.launch
 
 class ItemViewModel(application: Application) : AndroidViewModel(application) {
     private val repository: ItemRepository
-    val allItems: LiveData<List<Item>>
+    private val allItemsLiveData: LiveData<List<Item>>
 
     init {
         val itemDao = InventoryDatabase.getDatabase(application).itemDao()
         repository = ItemRepository(itemDao)
-        allItems = repository.allItems
+        allItemsLiveData = repository.getAllItems()
     }
 
     fun insertItem(item: Item) {
         viewModelScope.launch {
             repository.insertItem(item)
         }
+    }
+
+    fun deleteItem(name: String) {
+        viewModelScope.launch {
+            repository.deleteItemByName(name)
+        }
+    }
+
+    fun getAllItems(): LiveData<List<Item>> {
+        return allItemsLiveData
     }
 }

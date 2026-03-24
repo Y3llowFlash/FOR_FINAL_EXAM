@@ -13,4 +13,7 @@ interface ItemDao {
 
     @Query("SELECT * FROM item_table ORDER BY id ASC")
     fun getAllItems(): LiveData<List<Item>>
+
+    @Query("DELETE FROM item_table WHERE itemName = :name")
+    suspend fun deleteItemByName(name: String)
 }
