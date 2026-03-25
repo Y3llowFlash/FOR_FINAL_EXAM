@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">drawerNavigation</string>
+    <string name="nav_header_name">Rain</string>
+    <string name="nav_header_email">rain@example.com</string>
+    <string name="menu_add_contact">Add Contact</string>
+    <string name="menu_invite_friend">Invite Friend</string>
+    <string name="menu_add_note">Add Note</string>
+    <string name="contact_title">Contact Fragment</string>
+    <string name="invite_title">Invite Fragment</string>
+    <string name="note_title">Note Fragment</string>
+    <string name="profile_image">Profile image</string>
+</resources>

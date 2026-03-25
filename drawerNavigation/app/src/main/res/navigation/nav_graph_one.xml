@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_one"
+    app:startDestination="@id/contactFragment">
+
+    <fragment
+        android:id="@+id/contactFragment"
+        android:name="com.example.drawernavigation.ContactFragment"
+        android:label="@string/menu_add_contact" />
+
+    <fragment
+        android:id="@+id/inviteFragment"
+        android:name="com.example.drawernavigation.InviteFragment"
+        android:label="@string/menu_invite_friend" />
+
+    <fragment
+        android:id="@+id/noteFragment"
+        android:name="com.example.drawernavigation.NoteFragment"
+        android:label="@string/menu_add_note" />
+
+</navigation>
