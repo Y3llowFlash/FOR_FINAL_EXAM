@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">quizfragment</string>
+    <string name="title_home">Quiz Game for Kids</string>
+    <string name="title_question_one">Question (1/3)</string>
+    <string name="title_question_two">Question (2/3)</string>
+    <string name="title_question_three">Question (3/3)</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="guess_picture">Guess the picture!</string>
+    <string name="answer_hint">Write your answer here...</string>
+    <string name="check_answer">Check Answer</string>
+    <string name="quiz_finished">Quiz Finished!</string>
+    <string name="score_text">Your Score 1/3!</string>
+    <string name="keep_trying">Keep Trying!</string>
+    <string name="play_again">Play Again</string>
+    <string name="quiz_image">Quiz image</string>
+</resources>
